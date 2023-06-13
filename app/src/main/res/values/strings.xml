@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My PlantApp</string>
+    <string name="plant_app">Plant App</string>
+    <string name="add_information">mendeteksi tanaman dan manfaatnya melalui daun</string>
+    <string name="btn_galery">galery</string>
+    <string name="btncamera">camera</string>
+    <string name="predict">scan</string>
+    <string name="hasil">hasil</string>
 </resources>
