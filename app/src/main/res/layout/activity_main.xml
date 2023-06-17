@@ -30,7 +30,7 @@
             android:textSize="14sp"/>
 
         <ImageView
-            android:id="@+id/imageVIew"
+            android:id="@+id/imageView"
             android:layout_width="350dp"
             android:layout_height="350dp"
             android:layout_gravity="center"
@@ -76,6 +76,14 @@
             android:layout_gravity="center" />
 
         <TextView
+            android:id="@+id/tv_resultkurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hasil"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
             android:id="@+id/tv_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,9 +112,6 @@
             android:layout_marginBottom="25dp"
             android:layout_gravity="center"
             />
-
-
-
 
     </LinearLayout>
 

@@ -6,4 +6,25 @@
     <string name="btncamera">camera</string>
     <string name="predict">scan</string>
     <string name="hasil">hasil</string>
+    <string name="hasil_kurang">akurasi kurang</string>
+    <string name="not_identification">tidak teridentifikasi</string>
+    <string name="perubahan_jambubiji_detail">jambu biji merupakan tanaman yang bisa untuk mengobati diare jambu biji merupakan tanaman yang bisa untuk mengobati diare jambu biji merupakan tanaman yang bisa untuk mengobati diare</string>
+    <string name="perubahan_kari">Kari</string>
+    <string name="perubahan_kari_detail">tanaman kari bermanfaat untuk meredakan gejala rematik, membantu penyembuhan luka, serta mengurangi risiko penyakit jantung, kanker, dan diabetes</string>
+    <string name="perubahan_kemangi">kemangi</string>
+    <string name="perubahan_kemangi_detail">daun kemangi banyak dimanfaatkan sebagai pelengkap masakan. bermanfaat untuk meningkatkan sistem imun, meredakan batuk, mencegah demam</string>
+    <string name="perubahan_kunyit">kunyit</string>
+    <string name="perubahan_kunyit_detail">Kunyit mempunyai khasiat sebagai obat tradisional, mempunyai peranan sebagai antioksidan, antitumor, antikanker, antiracun</string>
+    <string name="perubahan_mint">mint</string>
+    <string name="perubahan_mint_detail">kandungan dalam daun mint memiliki banyak vitamin A, hal ini baik untuk kesehatan mata. juga dapat mempercepat proses penyembuhan flu</string>
+    <string name="perubahan_pepaya">pepaya</string>
+    <string name="perubahan_pepaya_detail">daun pepaya bermanfaat untuk menyeimbangkan gula darah, mendukung fungsi pencernaan, menyuburkan rambut</string>
+    <string name="perubahan_sirih">sirih</string>
+    <string name="perubahan_sirih_detail">daun sirih dapat dimanfaatkan untuk menjaga kesehatan gigi dan mulut, mempercepat penyembuhan luka</string>
+    <string name="perubahan_sirsak">sirsak</string>
+    <string name="perubahan_sirsak_detail">daun sirsak bermanfaat untuk mengobati asam urat, mengobati kanker, menstabilkan tekanan darah</string>
+    <string name="perubahan_lidahbuaya">lidah buaya</string>
+    <string name="perubahan_lidahbuaya_detail">lidah buaya berkhasiat untuk mengobati luka bakar, mengurangi plak gigi, memperlambat penuaan kulit</string>
+    <string name="perubahan_tehhijau">teh hijau</string>
+    <string name="perubahan_tehhijau_detail">teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih. teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih.teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih</string>
 </resources>
