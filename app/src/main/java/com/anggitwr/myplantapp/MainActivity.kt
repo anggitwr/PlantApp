@@ -16,6 +16,7 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -92,12 +93,12 @@ class MainActivity : AppCompatActivity() {
 
             // find the index of the class with the biggest confidence.
             var maxPos = 0
-            var minConfidence = 0.5111f
+            var minConfidence = 0.1f
             var maxConfidence = 0f
 
             for (i in confidences.indices) {
 
-                if (confidences[i] > minConfidence) {
+                if (confidences[i] > maxConfidence) {
                     maxConfidence  = confidences[i]
                     maxPos = i
 
@@ -124,7 +125,6 @@ class MainActivity : AppCompatActivity() {
                         s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100.0f)
 
                     }
-
 
                     binding.tvConfidence.setText(s)
 
@@ -158,18 +158,19 @@ class MainActivity : AppCompatActivity() {
                     if (classes[maxPos] == "Teh Hijau") {
                         binding.tvDetail.setText(R.string.perubahan_tehhijau_detail)
                     }
-                    confidences[i]
-                } else if (confidences[i] < minConfidence) {
-//                    binding.tvResultkurang.setText(R.string.hasil_kurang)
-                    AlertDialog.Builder(this@MainActivity).apply {
-                        setTitle("Warning!!!")
-                        setMessage("akurasi terlalu rendah")
-//                        create()
+//                    confidences[i]
+//                } else if (confidences[i] < minConfidence) {
+////                    binding.tvResultkurang.setText(R.string.hasil_kurang)
+//                    AlertDialog.Builder(this@MainActivity).apply {
+//                        setTitle("Warning!!!")
+//                        setMessage("akurasi terlalu rendah")
+////                        create()
 //                        show()
-                    }
+//
+//                    }
 //                    continue
                 }
-                confidences[i]
+//                confidences[i]
             }
 
             // Releases model resources if no longer used.
