@@ -92,92 +92,92 @@ class MainActivity : AppCompatActivity() {
 
             // find the index of the class with the biggest confidence.
             var maxPos = 0
-            var minConfidence = 0.3111f
+            var minConfidence = 0.5111f
             var maxConfidence = 0f
 
-            val classes = arrayOf(
-                "Jambu Biji",
-                "Kari",
-                "Kemangi",
-                "Kunyit",
-                "Mint",
-                "Pepaya",
-                "Sirih",
-                "Sirsak",
-                "Lidah Buaya",
-                "Teh Hijau",
-            )
+
 
             for (i in confidences.indices) {
 
                 if (confidences[i] > minConfidence) {
-                    minConfidence  = confidences[i]
+                    maxConfidence  = confidences[i]
                     maxPos = i
 
-//                    val classes = arrayOf(
-//                        "Jambu Biji",
-//                        "Kari",
-//                        "Kemangi",
-//                        "Kunyit",
-//                        "Mint",
-//                        "Pepaya",
-//                        "Sirih",
-//                        "Sirsak",
-//                        "Lidah Buaya",
-//                        "Teh Hijau",
-//                    )
-////            showLoading(false)
-                } else if (confidences[i] < minConfidence) {
-//                    binding.tvResultkurang.setText(R.string.hasil_kurang)
-                    AlertDialog.Builder(this@MainActivity).apply {
-                        setTitle("Warning!!!")
-                        setMessage("akurasi terlalu rendah")
-                        setPositiveButton("OK"){ _, _ ->
-                            finish()
-                        }
-                        create()
-                        show()
+                    val classes = arrayOf(
+                        "Jambu Biji",
+                        "Kari",
+                        "Kemangi",
+                        "Kunyit",
+                        "Mint",
+                        "Pepaya",
+                        "Sirih",
+                        "Sirsak",
+                        "Lidah Buaya",
+                        "Teh Hijau",
+                    )
+
+                    binding.tvResult.text = classes[maxPos]
+                    var s = ""
+                    for (i in 0 until classes.size) {
+                        s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100.0f)
+
                     }
+
+                    if (classes[maxPos] < "99"){
+                        binding.tvResultkurang.setText(R.string.hasil_kurang)
+                    }
+
+                    binding.tvConfidence.setText(s)
+
+                    if (classes[maxPos] == "Jambu Biji") {
+                        binding.tvDetail.setText(R.string.perubahan_jambubiji_detail)
+                    }
+                    if (classes[maxPos] == "Kari") {
+                        binding.tvDetail.setText(R.string.perubahan_kari_detail)
+                    }
+                    if (classes[maxPos] == "Kemangi") {
+                        binding.tvDetail.setText(R.string.perubahan_kemangi_detail)
+                    }
+                    if (classes[maxPos] == "Kunyit") {
+                        binding.tvDetail.setText(R.string.perubahan_kunyit_detail)
+                    }
+                    if (classes[maxPos] == "Mint") {
+                        binding.tvDetail.setText(R.string.perubahan_mint_detail)
+                    }
+                    if (classes[maxPos] == "Pepaya") {
+                        binding.tvDetail.setText(R.string.perubahan_pepaya_detail)
+                    }
+                    if (classes[maxPos] == "Sirih") {
+                        binding.tvDetail.setText(R.string.perubahan_sirih_detail)
+                    }
+                    if (classes[maxPos] == "Sirsak") {
+                        binding.tvDetail.setText(R.string.perubahan_sirsak_detail)
+                    }
+                    if (classes[maxPos] == "Lidahbuaya") {
+                        binding.tvDetail.setText(R.string.perubahan_lidahbuaya_detail)
+                    }
+                    if (classes[maxPos] == "Teh Hijau") {
+                        binding.tvDetail.setText(R.string.perubahan_tehhijau_detail)
+                    }
+                    confidences[i]
+//                } else if (confidences[i] < minConfidence) {
+////                    binding.tvResultkurang.setText(R.string.hasil_kurang)
+//                    AlertDialog.Builder(this@MainActivity).apply {
+//                        setTitle("Warning!!!")
+//                        setMessage("akurasi terlalu rendah")
+//                        setPositiveButton("OK"){ _, _ ->
+//
+//                        }
+//
+//                        show()
+//                    }
+//                    continue
                 }
+                confidences[i]
             }
 
-            binding.tvResult.text = classes[maxPos]
-            var s = ""
-            for (i in 0 until classes.size) {
-                s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100.0f)
-            }
-            binding.tvConfidence.setText(s)
 
-            if (classes[maxPos] == "Jambu Biji") {
-                binding.tvDetail.setText(R.string.perubahan_jambubiji_detail)
-            }
-            if (classes[maxPos] == "kari") {
-                binding.tvDetail.setText(R.string.perubahan_kari_detail)
-            }
-            if (classes[maxPos] == "Kemangi") {
-                binding.tvDetail.setText(R.string.perubahan_kemangi_detail)
-            }
-            if (classes[maxPos] == "Kunyit") {
-                binding.tvDetail.setText(R.string.perubahan_kunyit_detail)
-            }
-            if (classes[maxPos] == "Mint") {
-                binding.tvDetail.setText(R.string.perubahan_mint_detail)
-            }
-            if (classes[maxPos] == "Pepaya") {
-                binding.tvDetail.setText(R.string.perubahan_pepaya_detail)
-            }
-            if (classes[maxPos] == "Sirih") {
-                binding.tvDetail.setText(R.string.perubahan_sirih_detail)
-            }
-            if (classes[maxPos] == "Sirsak") {
-                binding.tvDetail.setText(R.string.perubahan_sirsak_detail)
-            }
-            if (classes[maxPos] == "Lidahbuaya") {
-                binding.tvDetail.setText(R.string.perubahan_lidahbuaya_detail)
-            }
-            if (classes[maxPos] == "Teh Hijau") {
-                binding.tvDetail.setText(R.string.perubahan_tehhijau_detail)
-            }
+
 
             // Releases model resources if no longer used.
             model.close()
