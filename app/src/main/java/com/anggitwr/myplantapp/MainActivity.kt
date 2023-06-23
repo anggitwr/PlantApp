@@ -5,10 +5,10 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.media.ThumbnailUtils
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
 import com.anggitwr.myplantapp.ml.ConvertedModelav472Lite
 import org.tensorflow.lite.DataType
@@ -95,13 +95,15 @@ class MainActivity : AppCompatActivity() {
             var minConfidence = 0.5111f
             var maxConfidence = 0f
 
-
-
             for (i in confidences.indices) {
 
                 if (confidences[i] > minConfidence) {
                     maxConfidence  = confidences[i]
                     maxPos = i
+
+//                    if (confidences[i] < 50){
+//                        binding.tvResultkurang.setText(R.string.hasil_kurang)
+//                    }
 
                     val classes = arrayOf(
                         "Jambu Biji",
@@ -123,9 +125,6 @@ class MainActivity : AppCompatActivity() {
 
                     }
 
-                    if (classes[maxPos] < "99"){
-                        binding.tvResultkurang.setText(R.string.hasil_kurang)
-                    }
 
                     binding.tvConfidence.setText(s)
 
@@ -160,24 +159,18 @@ class MainActivity : AppCompatActivity() {
                         binding.tvDetail.setText(R.string.perubahan_tehhijau_detail)
                     }
                     confidences[i]
-//                } else if (confidences[i] < minConfidence) {
-////                    binding.tvResultkurang.setText(R.string.hasil_kurang)
-//                    AlertDialog.Builder(this@MainActivity).apply {
-//                        setTitle("Warning!!!")
-//                        setMessage("akurasi terlalu rendah")
-//                        setPositiveButton("OK"){ _, _ ->
-//
-//                        }
-//
+                } else if (confidences[i] < minConfidence) {
+//                    binding.tvResultkurang.setText(R.string.hasil_kurang)
+                    AlertDialog.Builder(this@MainActivity).apply {
+                        setTitle("Warning!!!")
+                        setMessage("akurasi terlalu rendah")
+//                        create()
 //                        show()
-//                    }
+                    }
 //                    continue
                 }
                 confidences[i]
             }
-
-
-
 
             // Releases model resources if no longer used.
             model.close()
