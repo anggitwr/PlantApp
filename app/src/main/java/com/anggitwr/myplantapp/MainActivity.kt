@@ -8,6 +8,7 @@ import android.media.ThumbnailUtils
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import androidx.appcompat.app.AlertDialog
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
 import com.anggitwr.myplantapp.ml.ConvertedModelav472Lite
 import org.tensorflow.lite.DataType
@@ -29,6 +30,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
+
+        binding.btnCamera.setOnClickListener { startCamera() }
+        binding.btnGalery.setOnClickListener { startGallery() }
+
     }
 
     @Suppress("DEPRECATION")
@@ -106,9 +111,8 @@ class MainActivity : AppCompatActivity() {
             for (i in confidences.indices) {
 
                 if (confidences[i] > minConfidence) {
-//                    maxConfidence  = confidences[i]
+                    minConfidence  = confidences[i]
                     maxPos = i
-
 
 //                    val classes = arrayOf(
 //                        "Jambu Biji",
@@ -124,9 +128,17 @@ class MainActivity : AppCompatActivity() {
 //                    )
 ////            showLoading(false)
                 } else if (confidences[i] < minConfidence) {
-                    binding.tvResultkurang.setText(R.string.hasil_kurang)
+//                    binding.tvResultkurang.setText(R.string.hasil_kurang)
+                    AlertDialog.Builder(this@MainActivity).apply {
+                        setTitle("Warning!!!")
+                        setMessage("akurasi terlalu rendah")
+                        setPositiveButton("OK"){ _, _ ->
+                            finish()
+                        }
+                        create()
+                        show()
+                    }
                 }
-                return
             }
 
             binding.tvResult.text = classes[maxPos]
@@ -193,9 +205,9 @@ class MainActivity : AppCompatActivity() {
             binding.btnPrediction.setOnClickListener { classification(bitmap) }
 //            onSupportNavigateUp()
         }
-        else {
-            onBackPressed()
-        }
+//        else {
+//            onBackPressed()
+//        }
         super.onActivityResult(requestCode, resultCode, data)
     }
 }
