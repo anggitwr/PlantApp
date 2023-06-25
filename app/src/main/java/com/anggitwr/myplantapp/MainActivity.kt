@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
+
+
+
+
     @Suppress("DEPRECATION")
     private fun startCamera(){
         if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
