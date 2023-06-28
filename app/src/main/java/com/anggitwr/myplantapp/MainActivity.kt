@@ -29,11 +29,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
+
+        binding.btnGalery.setOnClickListener { startGallery() }
+        binding.btnCamera.setOnClickListener { startCamera() }
+        binding.btnObject.setOnClickListener { startActivity(Intent(this, DetectionActivity::class.java))}
+
     }
-
-
-
-
 
     @Suppress("DEPRECATION")
     private fun startCamera(){
