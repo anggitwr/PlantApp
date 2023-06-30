@@ -2,9 +2,9 @@
     <string name="app_name">My PlantApp</string>
     <string name="plant_app">Plant App</string>
     <string name="add_information">mendeteksi tanaman dan manfaatnya melalui daun</string>
-    <string name="btn_galery">galery</string>
-    <string name="btncamera">camera</string>
-    <string name="predict">scan</string>
+    <string name="btn_galery">Galery</string>
+    <string name="btncamera">Camera</string>
+    <string name="predict">Scan</string>
     <string name="hasil">hasil</string>
     <string name="hasil_kurang">akurasi kurang</string>
     <string name="not_identification">tidak teridentifikasi</string>
@@ -27,4 +27,8 @@
     <string name="perubahan_lidahbuaya_detail">lidah buaya berkhasiat untuk mengobati luka bakar, mengurangi plak gigi, memperlambat penuaan kulit</string>
     <string name="perubahan_tehhijau">teh hijau</string>
     <string name="perubahan_tehhijau_detail">teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih. teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih.teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih</string>
+    <string name="contem_des_1">cara scan daun agar mendapatkan hasil yang maksimal</string>
+    <string name="btn_onb_1_lewati">Lewati\n</string>
+    <string name="btn_onb_1_lanjut">Lanjut\n</string>
+    <string name="contem_des_2">Tampilan hasil scan tanaman</string>
 </resources>

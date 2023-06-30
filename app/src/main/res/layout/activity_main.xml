@@ -52,6 +52,7 @@
                 android:background="@drawable/btn_galery"
                 android:padding="10dp"
                 android:text="@string/btn_galery"
+                android:textAllCaps="false"
                 android:textColor="@color/white" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -61,6 +62,7 @@
                 android:layout_marginStart="10dp"
                 android:background="@drawable/btn_galery"
                 android:text="@string/btncamera"
+                android:textAllCaps="false"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -69,6 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/predict"
+            android:textAllCaps="false"
             android:background="@drawable/btn_scan"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
