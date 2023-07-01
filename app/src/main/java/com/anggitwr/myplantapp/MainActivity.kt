@@ -10,6 +10,9 @@ import android.provider.MediaStore
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
+import com.anggitwr.myplantapp.ml.Converted20baru
+import com.anggitwr.myplantapp.ml.Converted30
+import com.anggitwr.myplantapp.ml.ConvertedModelav4722Datalain2
 import com.anggitwr.myplantapp.ml.ConvertedModelav472Lite
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
@@ -59,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun classification(image : Bitmap?){
         try {
-            val model = ConvertedModelav472Lite.newInstance(applicationContext)
+            val model = Converted20baru.newInstance(applicationContext)
 
             // Creates inputs for reference.
             val inputFeature0 =
@@ -107,15 +110,21 @@ class MainActivity : AppCompatActivity() {
 //                    }
 
                     val classes = arrayOf(
-                        "Jambu Biji",
-                        "Kari",
-                        "Kemangi",
-                        "Kunyit",
-                        "Mint",
-                        "Pepaya",
-                        "Sirih",
-                        "Sirsak",
-                        "Lidah Buaya",
+                        "Hal lain",
+                        "Daun Jambu Biji",
+                        "Daun Kari",
+                        "Daun Kemangi",
+                        "Daun Kunyit",
+                        "Daun Mint",
+                        "Daun Pepaya",
+                        "Daun Sirih",
+                        "Daun Sirsak",
+                        "Hal lain",
+                        "Hal lain",
+                        "Hal lain",
+                        "Hal lain",
+                        "Lidahbuaya",
+                        "Hal lain",
                         "Teh Hijau",
                     )
 
@@ -128,28 +137,31 @@ class MainActivity : AppCompatActivity() {
 
                     binding.tvConfidence.setText(s)
 
-                    if (classes[maxPos] == "Jambu Biji") {
+                    if (classes[maxPos] == "Hal lain") {
+                        binding.tvDetail.setText(R.string.perubahan_hal_lain)
+                    }
+                    if (classes[maxPos] == "Daun Jambu Biji") {
                         binding.tvDetail.setText(R.string.perubahan_jambubiji_detail)
                     }
-                    if (classes[maxPos] == "Kari") {
+                    if (classes[maxPos] == "Daun Kari") {
                         binding.tvDetail.setText(R.string.perubahan_kari_detail)
                     }
-                    if (classes[maxPos] == "Kemangi") {
+                    if (classes[maxPos] == "Daun Kemangi") {
                         binding.tvDetail.setText(R.string.perubahan_kemangi_detail)
                     }
-                    if (classes[maxPos] == "Kunyit") {
+                    if (classes[maxPos] == "Daun Kunyit") {
                         binding.tvDetail.setText(R.string.perubahan_kunyit_detail)
                     }
-                    if (classes[maxPos] == "Mint") {
+                    if (classes[maxPos] == "Daun Mint") {
                         binding.tvDetail.setText(R.string.perubahan_mint_detail)
                     }
-                    if (classes[maxPos] == "Pepaya") {
+                    if (classes[maxPos] == "Daun Pepaya") {
                         binding.tvDetail.setText(R.string.perubahan_pepaya_detail)
                     }
-                    if (classes[maxPos] == "Sirih") {
+                    if (classes[maxPos] == "Daun Sirih") {
                         binding.tvDetail.setText(R.string.perubahan_sirih_detail)
                     }
-                    if (classes[maxPos] == "Sirsak") {
+                    if (classes[maxPos] == "Daun Sirsak") {
                         binding.tvDetail.setText(R.string.perubahan_sirsak_detail)
                     }
                     if (classes[maxPos] == "Lidahbuaya") {

@@ -11,12 +11,11 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="48dp"
-        android:alpha="0"
         android:contentDescription="@string/contem_des_1"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/scancontoh" />
+        app:srcCompat="@drawable/scan" />
 
     <TextView
         android:id="@+id/textView"
@@ -24,6 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="@string/contem_des_1"
+        android:textStyle="normal"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,20 +42,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_onb_1">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_onb_1_lewati"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:gravity="center"
             android:text="@string/btn_onb_1_lewati"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="15sp"
-            app:backgroundTint="@color/cp_2"
+            android:textSize="18sp"
+            android:backgroundTint="@color/green_200"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:strokeColor="#FFFFFF" />
+            />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="50dp"
@@ -74,16 +74,16 @@
                 app:srcCompat="@drawable/slide_nav" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_onb_1_lanjut"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:gravity="center"
             android:text="@string/btn_onb_1_lanjut"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="15sp"
-            app:backgroundTint="@color/cp_2"
+            android:textSize="18sp"
+            app:backgroundTint="@color/green_200"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

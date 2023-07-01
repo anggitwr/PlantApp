@@ -31,4 +31,6 @@
     <string name="btn_onb_1_lewati">Lewati\n</string>
     <string name="btn_onb_1_lanjut">Lanjut\n</string>
     <string name="contem_des_2">Tampilan hasil scan tanaman</string>
+    <string name="btn_onb_2_lewati">Sebelumnya</string>
+    <string name="perubahan_hal_lain">Gambar yang belum dikenali sistem. Mungkin semacam besi/plastik/kertas/kain/kaca bisa juga hal abstrak</string>
 </resources>
