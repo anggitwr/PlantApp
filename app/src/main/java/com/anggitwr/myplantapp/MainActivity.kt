@@ -10,6 +10,8 @@ import android.provider.MediaStore
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
+import com.anggitwr.myplantapp.ml.Converted1630
+import com.anggitwr.myplantapp.ml.Converted1630Vgg19
 import com.anggitwr.myplantapp.ml.Converted20baru
 import com.anggitwr.myplantapp.ml.Converted30
 import com.anggitwr.myplantapp.ml.ConvertedModelav4722Datalain2
@@ -57,12 +59,11 @@ class MainActivity : AppCompatActivity() {
         intent.action = Intent.ACTION_GET_CONTENT
         intent.type = "image/*"
         startActivityForResult(intent, 100)
-
     }
 
     private fun classification(image : Bitmap?){
         try {
-            val model = Converted20baru.newInstance(applicationContext)
+            val model = Converted1630Vgg19.newInstance(applicationContext)
 
             // Creates inputs for reference.
             val inputFeature0 =
