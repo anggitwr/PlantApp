@@ -16,6 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/plant_app"
+            android:textColor="@color/black50"
             android:textSize="28sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
@@ -36,7 +37,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/insert_image_bg"
-            android:padding="10dp"/>
+            android:padding="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,18 +49,25 @@
                 android:id="@+id/btn_galery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="140dp"
+                android:layout_marginEnd="50dp"
                 android:background="@drawable/btn_galery"
                 android:padding="10dp"
                 android:text="@string/btn_galery"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/black50"
+                />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_camera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="50dp"
                 android:background="@drawable/btn_galery"
                 android:text="@string/btncamera"
                 android:textAllCaps="false"
@@ -82,20 +90,37 @@
             android:id="@+id/tv_resultkurang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/hasil"
+            android:text="@string/hasil"
+            android:textSize="15sp"
+            android:textColor="@color/black50"
+            android:textStyle="normal"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             />
+
         <TextView
             android:id="@+id/tv_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/hasil"
+            android:textColor="@color/black50"
+            android:textStyle="bold"
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             />
 
+        <TextView
+            android:id="@+id/tv_akurasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/akurasi"
+            android:textSize="15sp"
+            android:textColor="@color/black50"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
 
         <TextView
             android:id="@+id/tv_confidence"
@@ -105,6 +130,15 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail"
+            android:textSize="15sp"
+            android:textColor="@color/black50"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
 
         <TextView
             android:id="@+id/tv_detail"

@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">My PlantApp</string>
-    <string name="plant_app">Plant App</string>
+    <string name="plant_app">Klasifikasi Tanaman</string>
     <string name="add_information">mendeteksi tanaman dan manfaatnya melalui daun</string>
     <string name="btn_galery">Galery</string>
     <string name="btncamera">Camera</string>
     <string name="predict">Scan</string>
-    <string name="hasil">hasil</string>
+    <string name="hasil">Hasil Prediksi : </string>
     <string name="hasil_kurang">akurasi kurang</string>
     <string name="not_identification">tidak teridentifikasi</string>
     <string name="perubahan_jambubiji_detail">jambu biji merupakan tanaman yang bisa untuk mengobati diare jambu biji merupakan tanaman yang bisa untuk mengobati diare jambu biji merupakan tanaman yang bisa untuk mengobati diare</string>
@@ -33,4 +33,7 @@
     <string name="contem_des_2">Tampilan hasil scan tanaman</string>
     <string name="btn_onb_2_lewati">Sebelumnya</string>
     <string name="perubahan_hal_lain">Gambar yang belum dikenali sistem. Mungkin semacam besi/plastik/kertas/kain/kaca bisa juga hal abstrak</string>
+    <string name="manfaat_tumbuhan">Manfaat Tumbuhan</string>
+    <string name="detail">Penjelasan :</string>
+    <string name="akurasi">Akurasi :</string>
 </resources>

@@ -7,8 +7,11 @@ import android.graphics.Bitmap
 import android.media.ThumbnailUtils
 import android.os.Bundle
 import android.provider.MediaStore
+import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
 import com.anggitwr.myplantapp.ml.Converted1630
 import com.anggitwr.myplantapp.ml.Converted1630Vgg19
@@ -35,11 +38,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        showLoading(false)
         supportActionBar?.hide()
 
         binding.btnCamera.setOnClickListener { startCamera() }
         binding.btnGalery.setOnClickListener { startGallery() }
 
+//        showLoading(false)
     }
 
     @Suppress("DEPRECATION")
@@ -62,7 +67,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun classification(image : Bitmap?){
+        showLoading(true)
         try {
+
             val model = Converted1630Vgg19.newInstance(applicationContext)
 
             // Creates inputs for reference.
@@ -136,6 +143,8 @@ class MainActivity : AppCompatActivity() {
 
                     }
 
+                    showLoading(false)
+//                    binding.tvManfaat.isVisible
                     binding.tvConfidence.setText(s)
 
                     if (classes[maxPos] == "Hal lain") {
@@ -199,7 +208,10 @@ class MainActivity : AppCompatActivity() {
             image = ThumbnailUtils.extractThumbnail(image, dimension, dimension)
             binding.imageView.setImageBitmap(image)
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false)
-            binding.btnPrediction.setOnClickListener { classification(image) }
+            binding.btnPrediction.setOnClickListener {
+                showLoading(true)
+                classification(image)
+            }
         }
 
         else if (requestCode == 100){
@@ -209,12 +221,22 @@ class MainActivity : AppCompatActivity() {
             bitmap = ThumbnailUtils.extractThumbnail(bitmap, dimension, dimension)
             binding.imageView.setImageBitmap(bitmap)
             bitmap = Bitmap.createScaledBitmap(bitmap, imageSize, imageSize, false)
-            binding.btnPrediction.setOnClickListener { classification(bitmap) }
+            binding.btnPrediction.setOnClickListener {
+                showLoading(true)
+                classification(bitmap)
+            }
 //            onSupportNavigateUp()
         }
 //        else {
 //            onBackPressed()
 //        }
         super.onActivityResult(requestCode, resultCode, data)
+    }
+    private fun showLoading(state: Boolean) {
+        if (state) {
+            binding.progressbar?.visibility = View.VISIBLE
+        } else {
+            binding.progressbar?.visibility = View.INVISIBLE
+        }
     }
 }
