@@ -8,17 +8,9 @@ import android.media.ThumbnailUtils
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isInvisible
-import androidx.core.view.isVisible
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
-import com.anggitwr.myplantapp.ml.Converted1630
 import com.anggitwr.myplantapp.ml.Converted1630Vgg19
-import com.anggitwr.myplantapp.ml.Converted20baru
-import com.anggitwr.myplantapp.ml.Converted30
-import com.anggitwr.myplantapp.ml.ConvertedModelav4722Datalain2
-import com.anggitwr.myplantapp.ml.ConvertedModelav472Lite
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer

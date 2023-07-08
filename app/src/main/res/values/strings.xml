@@ -8,7 +8,7 @@
     <string name="hasil">Hasil Prediksi : </string>
     <string name="hasil_kurang">akurasi kurang</string>
     <string name="not_identification">tidak teridentifikasi</string>
-    <string name="perubahan_jambubiji_detail">jambu biji merupakan tanaman yang bisa untuk mengobati diare jambu biji merupakan tanaman yang bisa untuk mengobati diare jambu biji merupakan tanaman yang bisa untuk mengobati diare</string>
+    <string name="perubahan_jambubiji_detail">jambu biji merupakan tanaman yang bisa untuk mengobati diare, Menurunkan kolesterol, menstabilkan tekanan darah, membantu penyembuhan demam berdarah, mengatasi perut kembung, menangkal radikal bebas </string>
     <string name="perubahan_kari">Kari</string>
     <string name="perubahan_kari_detail">tanaman kari bermanfaat untuk meredakan gejala rematik, membantu penyembuhan luka, serta mengurangi risiko penyakit jantung, kanker, dan diabetes</string>
     <string name="perubahan_kemangi">kemangi</string>
@@ -26,7 +26,7 @@
     <string name="perubahan_lidahbuaya">lidah buaya</string>
     <string name="perubahan_lidahbuaya_detail">lidah buaya berkhasiat untuk mengobati luka bakar, mengurangi plak gigi, memperlambat penuaan kulit</string>
     <string name="perubahan_tehhijau">teh hijau</string>
-    <string name="perubahan_tehhijau_detail">teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih. teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih.teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih</string>
+    <string name="perubahan_tehhijau_detail">teh hijau mengandung antioksidan, antimikroba dan antiinflamasi yang bermanfaat dalam menjaga kesehatan kulit wajah, seperti membantu mengatasi jerawat serta mengurangi produksi minyak berlebih.</string>
     <string name="contem_des_1">cara scan daun agar mendapatkan hasil yang maksimal</string>
     <string name="btn_onb_1_lewati">Lewati\n</string>
     <string name="btn_onb_1_lanjut">Lanjut\n</string>
@@ -36,4 +36,47 @@
     <string name="manfaat_tumbuhan">Manfaat Tumbuhan</string>
     <string name="detail">Penjelasan :</string>
     <string name="akurasi">Akurasi :</string>
+
+    <string-array name="nama_daun">
+        <item>Daun Jambu Biji</item>
+        <item>Daun Kari</item>
+        <item>Daun Kemangi</item>
+        <item>Daun Kunyit</item>
+        <item>Daun Mint</item>
+        <item>Daun Pepaya</item>
+        <item>Daun Sirih</item>
+        <item>Daun Sirsak</item>
+        <item>Lidahbuaya</item>
+        <item>Teh Hijau</item>
+    </string-array>
+
+    <string-array name="manfaat_daun_1">
+        <item>Dapat Membantu Menurunkan Kadar Gula Darah. Dikutip dari studi berjudul "Anti-hyperglycemic and anti-hyperlipidemic effects of guava leaf extract", minum racikan herbal daun jambu biji dapat menurunkan kadar gula darah setelah makan</item>
+        <item>Membantu melindungi tubuh dari penyakit kronis. Berbagai penelitian telah menunjukan bahwa daun kari mengandung banyak senyawa seperti linalool, alpha-terpinene, dan mirene. senyawa tersebut merupakan anti oksidan yang mampu menangkal radikal bebas</item>
+        <item>Daun kemangi merupakan tumbuhan aromatik yang berasal dari benua Asia dan Afrika. Selain digunakan sebagai campuran masakan, daun yang memiliki rasa sedikit pahit ini juga umum dikonsumsi dalam bentuk teh atau suplemen kesehatan.</item>
+        <item>Selama ini, rimpang kunyit dikenal sebagai rempah yang digunakan untuk menambah rasa dan menjadi pewarna makanan alami. Ternyata, tidak kalah dari rimpangnya, bagian daun kunyit juga menyimpan berbagai manfaat untuk kesehatan.</item>
+        <item>Ada banyak manfaat daun mint untuk kesehatan di balik sensasi dingin dan menyegarkannya. Daun ini sudah digunakan oleh bangsa Yunani Kuno untuk mengobati berbagai penyakit. Manfaat ini didapatkan dari berbagai nutrisi serta sifat antibakteri, antioksidan, dan antiradang di dalamnya.</item>
+        <item>Manfaat daun pepaya belum banyak diketahui, seperti mengobati demam berdarah, mengontrol kadar gula darah penderita diabetes, dan mengatasi sembelit. Manfaat-manfaat tersebut didapatkan berkat berbagai kandungan nutrisi yang ada di dalam daun papaya, termasuk enzim papain yang baik untuk kesehatan saluran pencernaan.</item>
+        <item>Daun sirih dikenal sebagai daun yang sering dikunyah oleh orang-orang tua. Daun sirih hijau memang selama ini diyakini memiliki manfaat untuk kesehatan gigi Sekitar 85 – 90% daun sirih terdiri dari air. Per 100 gram daun sirih hanya mengandung 44 kalori dan 0,4 – 1% lemak.</item>
+        <item>Flavonoid, tanin, dan fenolik merupakan senyawa tumbuhan (fitonutrien) yang memiliki sifat antioksidan.Daun sirsak juga mengandung senyawa acetogenin. Senyawa ini bisa berperan sebagai antiparasit, antivirus, antiradang, dan antimikroba</item>
+        <item>Lidah buaya adalah tanaman serba guna yang sudah dikenal khasiatnya sejak berabad-abad lalu. Lidah buaya atau sering disebut dengan aloe vera, menghasilkan dua bahan, yaitu gel dan getah, yang biasanya digunakan dalam obat­-obatan.</item>
+        <item>Teh hijau atau green tea adalah teh dengan nama latin Camellia sinensis yang populer tidak hanya di Indonesia, tapi juga di Jepang dan Tiongkok.</item>
+    </string-array>
+
+    <string-array name="manfaat_daun_2">
+        <item>Jambu Biji dapat menbantu meningkatkan kesehatan jantung. sebuah studi berjudul "Protectiuve effect of polysaccharies from Psidium guajava leaves against oxidative stresses" menyatakan bahwa jambu biji memiliki antioksidan dan vitamin tingkat tinggi yang dapat membantu melindungi jantung dari kerusakan akibat radikal bebas</item>
+        <item>Memiliki manfaat antara lain menyehatkan rambut, menurunkan berat badan, meredakan gejala rematik, membantu penyembuhan luka, serta mengurangi risiko penyakit jantung, kanker, dan diabetes</item>
+        <item>Kandungan eugenol membantu melawan mikroorganisme penyebab bau mulut, seperti Staphylococcus aureus, Klebsiella, dan Escherichia coli.</item>
+        <item>Kunyit atau Curcuma longa merupakan salah satu tanaman yang bagian batang atau rimpangnya kerap dijadikan sebagai bumbu dapur. Daun kunyit juga dapat mengurangi rasa sakit dan pada pasien sindrom iritasi usus besar atau irritable bowel syndrome (IBS). </item>
+        <item>Pasta gigi atau obat kumur yang mengandung daun mint dapat memberikan efek segar pada mulut dan pernapasan. Tak hanya itu, penelitian juga mengungkapkan bahwa daun mint dalam pasta gigi dan obat kumur memiliki efek antibakteri yang dapat membunuh bakteri penyebab bau mulut dan masalah di gigi, gusi, serta mulut.</item>
+        <item>Papain diketahui mampu memecah protein menjadi asam amino yang lebih kecil agar lebih mudah dicerna, sehingga gangguan pada pencernaan dapat diminimalkan.Papain dalam daun papaya juga bermanfaat untuk mencegah dan mengatasi sembelit. Manfaat daun papaya ini diperoleh karena kandungan serat dalam daun pepaya yang dapat melunakkan kotoran, sehingga dapat mencegah dan mengatasi sembelit.</item>
+        <item>Manfaat daun sirih lainnya adalah mempercepat penyembuhan luka, terutama luka bakar. Hal ini masih dikaitkan dengan kandungan antioksidannya.</item>
+        <item>Pasalnya, daun sirsak memiliki senyawa aktif yang disebut dengan acetogenin.Sebuah penelitian dari Asia Pacific journal of clinical nutrition (2017) melaporkan pemberian air dengan ekstrak daun sirsak  berpotensi menghambat pertumbuhan sel kanker usus besar.</item>
+        <item>Manfaat lidah buaya yang paling terkenal adalah sebagai pengobatan berbagai masalah kulit seperti luka bakar, terbakar matahari, frostbite, iritasi dan gatal pada kulit, serta psoriasis. Beberapa orang juga menggunakannya untuk mempercepat penyembuhan luka.</item>
+        <item>Pada teh hijau, terdapat senyawa aktif Epigallocatechin-3-gallate (EGCG) yang memiliki potensi membunuh sel-sel kanker pada payudara, paru-paru, dan usus tanpa merusak sel normal.</item>
+    </string-array>
+
+<!--    <string-array name="manfaat_daun_3">-->
+<!--        <item>3. Memiliki buah yang memiliki kandungan vitamin C yang cukup tinggi. Vitamin C berperan penting dalam menjaga kesehaatan sistem kekebalan tubuh.</item>-->
+<!--    </string-array>-->
 </resources>
