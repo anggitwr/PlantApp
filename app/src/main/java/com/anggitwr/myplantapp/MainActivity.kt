@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        showLoading(false)
+//        showLoading(false)
         supportActionBar?.hide()
 
         binding.btnCamera.setOnClickListener { startCamera() }
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun classification(image : Bitmap?){
-        showLoading(true)
+//        showLoading(true)
         try {
 
             val model = Converted1630Vgg19.newInstance(applicationContext)
@@ -135,7 +135,7 @@ class MainActivity : AppCompatActivity() {
 
                     }
 
-                    showLoading(false)
+//                    showLoading(false)
 //                    binding.tvManfaat.isVisible
                     binding.tvConfidence.setText(s)
 
@@ -201,7 +201,7 @@ class MainActivity : AppCompatActivity() {
             binding.imageView.setImageBitmap(image)
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false)
             binding.btnPrediction.setOnClickListener {
-                showLoading(true)
+//                showLoading(true)
                 classification(image)
             }
         }
@@ -214,7 +214,7 @@ class MainActivity : AppCompatActivity() {
             binding.imageView.setImageBitmap(bitmap)
             bitmap = Bitmap.createScaledBitmap(bitmap, imageSize, imageSize, false)
             binding.btnPrediction.setOnClickListener {
-                showLoading(true)
+//                showLoading(true)
                 classification(bitmap)
             }
 //            onSupportNavigateUp()
@@ -224,11 +224,11 @@ class MainActivity : AppCompatActivity() {
 //        }
         super.onActivityResult(requestCode, resultCode, data)
     }
-    private fun showLoading(state: Boolean) {
-        if (state) {
-            binding.progressbar?.visibility = View.VISIBLE
-        } else {
-            binding.progressbar?.visibility = View.INVISIBLE
-        }
-    }
+//    private fun showLoading(state: Boolean) {
+//        if (state) {
+//            binding.progressbar?.visibility = View.VISIBLE
+//        } else {
+//            binding.progressbar?.visibility = View.INVISIBLE
+//        }
+//    }
 }

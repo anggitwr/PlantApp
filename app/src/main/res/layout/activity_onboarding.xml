@@ -30,7 +30,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/poppinsregular"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -49,11 +50,12 @@
             android:text="@string/btn_onb_1_lewati"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:backgroundTint="@color/green_200"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -82,12 +84,13 @@
             android:text="@string/btn_onb_1_lanjut"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="14sp"
             app:backgroundTint="@color/green_200"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:strokeColor="#FFFFFF" />
+            app:strokeColor="#FFFFFF"
+            android:fontFamily="@font/poppinsregular"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

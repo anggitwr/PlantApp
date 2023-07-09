@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,8 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/plant_app"
+            android:fontFamily="@font/poppinsbold"
             android:textColor="@color/black50"
-            android:textSize="28sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"/>
@@ -26,18 +26,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add_information"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
-            android:textSize="14sp"/>
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"/>
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/insert_image_bg"
-            android:padding="10dp" />
+            android:padding="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,14 +54,8 @@
                 android:padding="10dp"
                 android:text="@string/btn_galery"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
-
-            <ProgressBar
-                android:id="@+id/progressbar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:outlineSpotShadowColor="@color/black50"
-                />
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_camera"
@@ -71,7 +65,8 @@
                 android:background="@drawable/btn_galery"
                 android:text="@string/btncamera"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"/>
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -84,7 +79,8 @@
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:padding="10dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsregular"/>
 
         <TextView
             android:id="@+id/tv_resultkurang"
@@ -96,6 +92,7 @@
             android:textStyle="normal"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
@@ -108,6 +105,7 @@
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
@@ -120,6 +118,7 @@
             android:textStyle="normal"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
@@ -129,6 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
@@ -138,7 +138,8 @@
             android:textSize="15sp"
             android:textColor="@color/black50"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsregular"/>
 
         <TextView
             android:id="@+id/tv_detail"
@@ -151,6 +152,7 @@
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="25dp"
             android:layout_gravity="center"
+            android:fontFamily="@font/poppinsregular"
             />
 
     </LinearLayout>

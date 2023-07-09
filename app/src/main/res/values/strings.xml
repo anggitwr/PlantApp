@@ -35,7 +35,11 @@
     <string name="perubahan_hal_lain">Gambar yang belum dikenali sistem. Mungkin semacam besi/plastik/kertas/kain/kaca bisa juga hal abstrak</string>
     <string name="manfaat_tumbuhan">Manfaat Tumbuhan</string>
     <string name="detail">Penjelasan :</string>
-    <string name="akurasi">Akurasi :</string>
+    <string name="akurasi">Confidence :</string>
+    <string name="nama_tanaman">Nama tanaman</string>
+    <string name="nama_latin">nama latin</string>
+    <string name="informasi_tanaman">Informasi tanaman</string>
+    <string name="menu_scan">menu scan</string>
 
     <string-array name="nama_daun">
         <item>Daun Jambu Biji</item>
@@ -48,6 +52,19 @@
         <item>Daun Sirsak</item>
         <item>Lidahbuaya</item>
         <item>Teh Hijau</item>
+    </string-array>
+
+    <string-array name="nama_latin">
+        <item>Psidium guajava</item>
+        <item>Murraya koenigii</item>
+        <item>Ocimum basilicum</item>
+        <item>Curcuma longa</item>
+        <item>Mentha × piperita</item>
+        <item>Carica papaya</item>
+        <item>Piper betle</item>
+        <item>Annona muricata</item>
+        <item>Aloe vera</item>
+        <item>Camellia sinensis</item>
     </string-array>
 
     <string-array name="manfaat_daun_1">
@@ -76,7 +93,19 @@
         <item>Pada teh hijau, terdapat senyawa aktif Epigallocatechin-3-gallate (EGCG) yang memiliki potensi membunuh sel-sel kanker pada payudara, paru-paru, dan usus tanpa merusak sel normal.</item>
     </string-array>
 
-<!--    <string-array name="manfaat_daun_3">-->
-<!--        <item>3. Memiliki buah yang memiliki kandungan vitamin C yang cukup tinggi. Vitamin C berperan penting dalam menjaga kesehaatan sistem kekebalan tubuh.</item>-->
-<!--    </string-array>-->
+    <string-array name="imag">
+        <item>@drawable/jambubiji_1</item>
+        <item>@drawable/kari_1</item>
+        <item>@drawable/kemangi_1</item>
+        <item>@drawable/kunyit_1</item>
+        <item>@drawable/mint_1</item>
+        <item>@drawable/pepaya_1</item>
+        <item>@drawable/sirih_1</item>
+        <item>@drawable/sirsak_1</item>
+        <item>@drawable/lidahbuaya_1</item>
+        <item>@drawable/tehhijau_1</item>
+    </string-array>
+    <!--    <string-array name="manfaat_daun_3">-->
+    <!--        <item>3. Memiliki buah yang memiliki kandungan vitamin C yang cukup tinggi. Vitamin C berperan penting dalam menjaga kesehaatan sistem kekebalan tubuh.</item>-->
+    <!--    </string-array>-->
 </resources>
