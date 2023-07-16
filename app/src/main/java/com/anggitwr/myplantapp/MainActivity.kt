@@ -13,6 +13,7 @@ import com.anggitwr.myplantapp.databinding.ActivityMainBinding
 import com.anggitwr.myplantapp.ml.Converted1630Vgg19
 import com.anggitwr.myplantapp.ml.Converted1630Vgg194
 import com.anggitwr.myplantapp.ml.Converted1645Vgg195
+import com.anggitwr.myplantapp.ml.Converted1650Vgg195
 import com.anggitwr.myplantapp.ml.Converted1655Vgg195
 import com.anggitwr.myplantapp.ml.Converted30Vgg19Data4
 import org.tensorflow.lite.DataType
@@ -66,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 //        showLoading(true)
         try {
 
-            val model =  Converted1645Vgg195.newInstance(applicationContext)
+            val model =  Converted1650Vgg195.newInstance(applicationContext)
 
             // Creates inputs for reference.
             val inputFeature0 =
