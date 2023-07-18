@@ -21,7 +21,7 @@ class OnboardingActivity2 : AppCompatActivity() {
     private fun action(){
 
         binding.btnOnb1Lanjut.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ListActivity::class.java)
             startActivity(intent)
         }
     }

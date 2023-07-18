@@ -29,7 +29,8 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_onb_1" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_onb_1"
+        android:fontFamily="@font/poppinsregular"/>
 
     <Button
         android:id="@+id/btn_onb_1_lanjut"
@@ -46,6 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#FFFFFF" />
+        app:strokeColor="#FFFFFF"
+        android:fontFamily="@font/poppinsregular"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

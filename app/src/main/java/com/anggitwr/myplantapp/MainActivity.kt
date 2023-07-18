@@ -8,17 +8,14 @@ import android.media.ThumbnailUtils
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isInvisible
-import androidx.core.view.isVisible
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
-import com.anggitwr.myplantapp.ml.Converted1630
 import com.anggitwr.myplantapp.ml.Converted1630Vgg19
-import com.anggitwr.myplantapp.ml.Converted20baru
-import com.anggitwr.myplantapp.ml.Converted30
-import com.anggitwr.myplantapp.ml.ConvertedModelav4722Datalain2
-import com.anggitwr.myplantapp.ml.ConvertedModelav472Lite
+import com.anggitwr.myplantapp.ml.Converted1630Vgg194
+import com.anggitwr.myplantapp.ml.Converted1645Vgg195
+import com.anggitwr.myplantapp.ml.Converted1650Vgg195
+import com.anggitwr.myplantapp.ml.Converted1655Vgg195
+import com.anggitwr.myplantapp.ml.Converted30Vgg19Data4
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
@@ -38,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        showLoading(false)
+//        showLoading(false)
         supportActionBar?.hide()
 
         binding.btnCamera.setOnClickListener { startCamera() }
@@ -67,10 +64,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun classification(image : Bitmap?){
-        showLoading(true)
+//        showLoading(true)
         try {
 
-            val model = Converted1630Vgg19.newInstance(applicationContext)
+            val model =  Converted1650Vgg195.newInstance(applicationContext)
 
             // Creates inputs for reference.
             val inputFeature0 =
@@ -118,7 +115,7 @@ class MainActivity : AppCompatActivity() {
 //                    }
 
                     val classes = arrayOf(
-                        "Hal lain",
+                        "Benda lain",
                         "Daun Jambu Biji",
                         "Daun Kari",
                         "Daun Kemangi",
@@ -127,12 +124,12 @@ class MainActivity : AppCompatActivity() {
                         "Daun Pepaya",
                         "Daun Sirih",
                         "Daun Sirsak",
-                        "Hal lain",
-                        "Hal lain",
-                        "Hal lain",
-                        "Hal lain",
+                        "Benda lain",
+                        "Benda lain",
+                        "Benda lain",
+                        "Benda lain",
                         "Lidahbuaya",
-                        "Hal lain",
+                        "Benda lain",
                         "Teh Hijau",
                     )
 
@@ -143,42 +140,152 @@ class MainActivity : AppCompatActivity() {
 
                     }
 
-                    showLoading(false)
+//                    showLoading(false)
 //                    binding.tvManfaat.isVisible
                     binding.tvConfidence.setText(s)
 
-                    if (classes[maxPos] == "Hal lain") {
+                    if (classes[maxPos] == "Benda lain") {
                         binding.tvDetail.setText(R.string.perubahan_hal_lain)
+                        binding.tvNamabotani.setText(R.string.nama_botani_hallain)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_hallain)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_hallain)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_hallain)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_hallain)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_hallain)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_hallain)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_hallain)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_hallain)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_hallain)
                     }
                     if (classes[maxPos] == "Daun Jambu Biji") {
                         binding.tvDetail.setText(R.string.perubahan_jambubiji_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_jambubiji)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_jambubiji)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_jambubiji)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_jambubiji)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_jambubiji)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_jambubiji)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_jambubiji)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_jambubiji)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_jambubiji)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_jambubiji)
                     }
                     if (classes[maxPos] == "Daun Kari") {
                         binding.tvDetail.setText(R.string.perubahan_kari_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_kari)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_kari)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_kari)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_kari)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_kari)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_kari)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_kari)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_kari)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_kari)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_kari)
                     }
                     if (classes[maxPos] == "Daun Kemangi") {
                         binding.tvDetail.setText(R.string.perubahan_kemangi_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_kemangi)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_kemangi)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_kemangi)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_kemangi)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_kemangi)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_kemangi)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_kemangi)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_kemangi)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_kemangi)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_kemangi)
                     }
                     if (classes[maxPos] == "Daun Kunyit") {
                         binding.tvDetail.setText(R.string.perubahan_kunyit_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_kunyit)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_kunyit)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_kunyit)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_kunyit)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_kunyit)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_kunyit)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_kunyit)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_kunyit)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_kunyit)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_kunyit)
                     }
                     if (classes[maxPos] == "Daun Mint") {
                         binding.tvDetail.setText(R.string.perubahan_mint_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_mint)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_mint)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_mint)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_mint)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_mint)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_mint)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_mint)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_mint)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_mint)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_mint)
                     }
                     if (classes[maxPos] == "Daun Pepaya") {
                         binding.tvDetail.setText(R.string.perubahan_pepaya_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_pepaya)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_pepaya)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_pepaya)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_pepaya)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_pepaya)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_pepaya)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_pepaya)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_pepaya)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_pepaya)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_pepaya)
                     }
                     if (classes[maxPos] == "Daun Sirih") {
                         binding.tvDetail.setText(R.string.perubahan_sirih_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_sirih)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_sirih)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_sirih)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_sirih)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_sirih)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_sirih)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_sirih)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_sirih)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_sirih)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_sirih)
                     }
                     if (classes[maxPos] == "Daun Sirsak") {
                         binding.tvDetail.setText(R.string.perubahan_sirsak_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_sirsak)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_sirsak)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_sirsak)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_sirsak)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_sirsak)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_sirsak)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_sirsak)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_sirsak)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_sirsak)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_sirsak)
                     }
                     if (classes[maxPos] == "Lidahbuaya") {
                         binding.tvDetail.setText(R.string.perubahan_lidahbuaya_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_lidahbuaya)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_lidahbuaya)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_lidahbuaya)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_lidahbuaya)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_lidahbuaya)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_lidahbuaya)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_lidahbuaya)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_lidahbuaya)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_lidahbuaya)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_lidahbuaya)
                     }
                     if (classes[maxPos] == "Teh Hijau") {
                         binding.tvDetail.setText(R.string.perubahan_tehhijau_detail)
+                        binding.tvNamabotani.setText(R.string.nama_botani_tehhijau)
+                        binding.tvJenistanaman.setText(R.string.karakteristik_jenistumbuhan_tehhijau)
+                        binding.tvKetinggian.setText(R.string.karakteristik_ketinggian_tehhijau)
+                        binding.tvPanen.setText(R.string.karakteristik_waktupanen_tehhijau)
+                        binding.tvWarnaBuah.setText(R.string.karakteristik_warnabuah_tehhijau)
+                        binding.tvKlasifikasiMarga.setText(R.string.klasifikasi_marga_tehhijau)
+                        binding.tvKlasifikasiKeluarga.setText(R.string.klasifikasi_keluarga_tehhijau)
+                        binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_tehhijau)
+                        binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_tehhijau)
+                        binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_tehhijau)
                     }
 //                    confidences[i]
 //                } else if (confidences[i] < minConfidence) {
@@ -194,7 +301,6 @@ class MainActivity : AppCompatActivity() {
                 }
 //                confidences[i]
             }
-
             // Releases model resources if no longer used.
             model.close()
         } catch (e: Exception){
@@ -209,7 +315,7 @@ class MainActivity : AppCompatActivity() {
             binding.imageView.setImageBitmap(image)
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false)
             binding.btnPrediction.setOnClickListener {
-                showLoading(true)
+//                showLoading(true)
                 classification(image)
             }
         }
@@ -222,7 +328,7 @@ class MainActivity : AppCompatActivity() {
             binding.imageView.setImageBitmap(bitmap)
             bitmap = Bitmap.createScaledBitmap(bitmap, imageSize, imageSize, false)
             binding.btnPrediction.setOnClickListener {
-                showLoading(true)
+//                showLoading(true)
                 classification(bitmap)
             }
 //            onSupportNavigateUp()
@@ -232,11 +338,11 @@ class MainActivity : AppCompatActivity() {
 //        }
         super.onActivityResult(requestCode, resultCode, data)
     }
-    private fun showLoading(state: Boolean) {
-        if (state) {
-            binding.progressbar?.visibility = View.VISIBLE
-        } else {
-            binding.progressbar?.visibility = View.INVISIBLE
-        }
-    }
+//    private fun showLoading(state: Boolean) {
+//        if (state) {
+//            binding.progressbar?.visibility = View.VISIBLE
+//        } else {
+//            binding.progressbar?.visibility = View.INVISIBLE
+//        }
+//    }
 }

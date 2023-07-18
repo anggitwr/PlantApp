@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,8 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/plant_app"
+            android:fontFamily="@font/poppinsbold"
             android:textColor="@color/black50"
-            android:textSize="28sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"/>
@@ -26,18 +26,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add_information"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
-            android:textSize="14sp"/>
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"/>
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/insert_image_bg"
-            android:padding="10dp" />
+            android:padding="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,14 +54,8 @@
                 android:padding="10dp"
                 android:text="@string/btn_galery"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
-
-            <ProgressBar
-                android:id="@+id/progressbar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:outlineSpotShadowColor="@color/black50"
-                />
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_camera"
@@ -71,7 +65,8 @@
                 android:background="@drawable/btn_galery"
                 android:text="@string/btncamera"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinsregular"/>
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -84,7 +79,8 @@
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:padding="10dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsregular"/>
 
         <TextView
             android:id="@+id/tv_resultkurang"
@@ -96,6 +92,7 @@
             android:textStyle="normal"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
@@ -108,6 +105,7 @@
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
@@ -120,6 +118,7 @@
             android:textStyle="normal"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
@@ -129,19 +128,299 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
             />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_botani"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black50"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <TextView
+            android:id="@+id/tv_namabotani"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsitalic"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/karakteristik"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black50"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="Jenis Tanaman"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_jenistanaman"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="@string/ketinggian_tumbuhan"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_ketinggian"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="waktu panen buah"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_panen"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="warna buah"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_warna_buah"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/klasifikasi_ilmiah"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black50"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="marga"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_klasifikasi_marga"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="keluarga"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_klasifikasi_keluarga"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="kelas"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_klasifikasi_kelas"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="divisi"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/tv_klasifikasi_divisi"
+                android:textSize="14sp"
+                android:textColor="@color/black50"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/detail"
             android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
             android:textColor="@color/black50"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"/>
 
         <TextView
             android:id="@+id/tv_detail"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cara_pemanfaatan"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black50"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <TextView
+            android:id="@+id/tv_cara_pemanfaatan"
             android:textSize="16sp"
             android:contentDescription="@string/hasil"
             android:layout_width="match_parent"
@@ -151,8 +430,8 @@
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="25dp"
             android:layout_gravity="center"
+            android:fontFamily="@font/poppinsregular"
             />
-
     </LinearLayout>
 
 </ScrollView>
