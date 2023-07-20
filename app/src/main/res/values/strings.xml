@@ -76,7 +76,7 @@
     <string name="perubahan_pepaya">pepaya</string>
     <string name="nama_botani_pepaya">Carica papaya</string>
     <string name="karakteristik_jenistumbuhan_pepaya">pohon</string>
-    <string name="karakteristik_ketinggian_pepaya">6 sampai 10 m</string>
+    <string name="karakteristik_ketinggian_pepaya">2 sampai 4 m</string>
     <string name="karakteristik_waktupanen_pepaya">Sepanjang tahun</string>
     <string name="karakteristik_warnabuah_pepaya">kuning, orange, hijau</string>
     <string name="klasifikasi_marga_pepaya">Carica</string>
@@ -152,8 +152,8 @@
     <string name="perubahan_hallain_detail">-</string>
 
     <string name="contem_des_1">cara scan daun agar mendapatkan hasil yang maksimal</string>
-    <string name="btn_onb_1_lewati">Lewati\n</string>
-    <string name="btn_onb_1_lanjut">Lanjut\n</string>
+    <string name="btn_onb_1_lewati">Lewati</string>
+    <string name="btn_onb_1_lanjut">Lanjut</string>
     <string name="contem_des_2">Tampilan hasil scan tanaman</string>
     <string name="btn_onb_2_lewati">Sebelumnya</string>
     <string name="perubahan_hal_lain">Gambar yang belum dikenali sistem. Mungkin semacam besi/plastik/kertas/kain/kaca bisa juga hal abstrak</string>
@@ -169,6 +169,9 @@
     <string name="klasifikasi_ilmiah">Klasifikasi Ilmiah</string>
     <string name="cara_pemanfaatan">Cara Pemanfaatan</string>
     <string name="ketinggian_tumbuhan">Ketinggian Tumbuhan</string>
+    <string name="myplant">MyPlant</string>
+    <string name="lewati">Lewati</string>
+    <string name="lanjut">Lanjut</string>
 
     <string-array name="nama_daun">
         <item>Daun Jambu Biji</item>

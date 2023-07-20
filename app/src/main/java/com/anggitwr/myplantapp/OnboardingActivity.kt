@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.anggitwr.myplantapp.databinding.ActivityOnboardingBinding
 
+
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
 
@@ -20,7 +21,7 @@ class OnboardingActivity : AppCompatActivity() {
     }
 
     private fun action(){
-        binding.btnOnb1Lewati.setOnClickListener {
+        binding.btnLewati.setOnClickListener {
             val intent = Intent(this, ListActivity::class.java)
             startActivity(intent)
         }

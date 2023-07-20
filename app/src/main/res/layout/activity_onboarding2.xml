@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/contem_des_2"
-        android:textColor="@color/black"
+        android:textColor="@color/black50"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,22 +32,19 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_onb_1"
         android:fontFamily="@font/poppinsregular"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_onb_1_lanjut"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_lanjut"
+        android:fontFamily="@font/poppinsregular"
         android:gravity="center"
         android:text="@string/btn_onb_1_lanjut"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="15sp"
-        app:backgroundTint="@color/green_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#FFFFFF"
-        android:fontFamily="@font/poppinsregular"/>
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

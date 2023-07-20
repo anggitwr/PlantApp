@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.anggitwr.myplantapp.R
 import com.anggitwr.myplantapp.data.Tanaman
 
-
 class TanamanAdapter(private val Tanaman: ArrayList<Tanaman>):
     RecyclerView.Adapter<TanamanAdapter.TanamanViewHoldder>() {
 
