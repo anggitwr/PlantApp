@@ -102,7 +102,7 @@
     <string name="perubahan_sirsak">sirsak</string>
     <string name="nama_botani_sirsak">Annona mucirata</string>
     <string name="karakteristik_jenistumbuhan_sirsak">pohon</string>
-    <string name="karakteristik_ketinggian_sirsak">9 m</string>
+    <string name="karakteristik_ketinggian_sirsak">4 m</string>
     <string name="karakteristik_waktupanen_sirsak">musim panas</string>
     <string name="karakteristik_warnabuah_sirsak">hijau</string>
     <string name="klasifikasi_marga_sirsak">Annona</string>
@@ -172,6 +172,15 @@
     <string name="myplant">MyPlant</string>
     <string name="lewati">Lewati</string>
     <string name="lanjut">Lanjut</string>
+    <string name="gambar_buah">Gambar buah</string>
+    <string name="divisi">divisi</string>
+    <string name="kelas">kelas</string>
+    <string name="keluarga">keluarga</string>
+    <string name="marga">marga</string>
+    <string name="warna_buah">warna buah</string>
+    <string name="waktu_panen_buah">waktu panen buah</string>
+    <string name="jenis_tanaman">Jenis Tanaman</string>
+    <string name="gambar_lain">Gambar</string>
 
     <string-array name="nama_daun">
         <item>Daun Jambu Biji</item>

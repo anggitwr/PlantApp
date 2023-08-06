@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:text="Jenis Tanaman"
+                android:text="@string/jenis_tanaman"
                 android:fontFamily="@font/poppinsregular"/>
 
             <TextView
@@ -229,7 +229,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:text="waktu panen buah"
+                android:text="@string/waktu_panen_buah"
                 android:fontFamily="@font/poppinsregular"/>
 
             <TextView
@@ -254,7 +254,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:text="warna buah"
+                android:text="@string/warna_buah"
                 android:fontFamily="@font/poppinsregular"/>
 
             <TextView
@@ -291,7 +291,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:text="marga"
+                android:text="@string/marga"
                 android:fontFamily="@font/poppinsregular"/>
 
             <TextView
@@ -316,7 +316,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:text="keluarga"
+                android:text="@string/keluarga"
                 android:fontFamily="@font/poppinsregular"/>
 
             <TextView
@@ -341,7 +341,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:text="kelas"
+                android:text="@string/kelas"
                 android:fontFamily="@font/poppinsregular"/>
 
             <TextView
@@ -367,7 +367,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp"
-                android:text="divisi"
+                android:text="@string/divisi"
                 android:fontFamily="@font/poppinsregular"/>
 
             <TextView
@@ -432,6 +432,28 @@
             android:layout_gravity="center"
             android:fontFamily="@font/poppinsregular"
             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gambar_lain"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/black50"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <ImageView
+            android:id="@+id/iv_buah"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"/>
+
     </LinearLayout>
 
 </ScrollView>

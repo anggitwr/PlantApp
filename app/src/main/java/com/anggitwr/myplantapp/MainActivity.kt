@@ -156,6 +156,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_hallain)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_hallain)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_hallain)
+                        binding.ivBuah.setImageResource(R.drawable.no_image)
                     }
                     if (classes[maxPos] == "Daun Jambu Biji") {
                         binding.tvDetail.setText(R.string.perubahan_jambubiji_detail)
@@ -169,6 +170,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_jambubiji)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_jambubiji)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_jambubiji)
+                        binding.ivBuah.setImageResource(R.drawable.jambubiji_2)
                     }
                     if (classes[maxPos] == "Daun Kari") {
                         binding.tvDetail.setText(R.string.perubahan_kari_detail)
@@ -182,6 +184,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_kari)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_kari)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_kari)
+                        binding.ivBuah.setImageResource(R.drawable.buah_kari)
                     }
                     if (classes[maxPos] == "Daun Kemangi") {
                         binding.tvDetail.setText(R.string.perubahan_kemangi_detail)
@@ -195,6 +198,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_kemangi)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_kemangi)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_kemangi)
+                        binding.ivBuah.setImageResource(R.drawable.buah_kemangi)
                     }
                     if (classes[maxPos] == "Daun Kunyit") {
                         binding.tvDetail.setText(R.string.perubahan_kunyit_detail)
@@ -208,6 +212,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_kunyit)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_kunyit)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_kunyit)
+                        binding.ivBuah.setImageResource(R.drawable.buah_kunyit)
                     }
                     if (classes[maxPos] == "Daun Mint") {
                         binding.tvDetail.setText(R.string.perubahan_mint_detail)
@@ -221,6 +226,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_mint)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_mint)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_mint)
+                        binding.ivBuah.setImageResource(R.drawable.mint_2)
                     }
                     if (classes[maxPos] == "Daun Pepaya") {
                         binding.tvDetail.setText(R.string.perubahan_pepaya_detail)
@@ -234,6 +240,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_pepaya)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_pepaya)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_pepaya)
+                        binding.ivBuah.setImageResource(R.drawable.buah_pepaya)
                     }
                     if (classes[maxPos] == "Daun Sirih") {
                         binding.tvDetail.setText(R.string.perubahan_sirih_detail)
@@ -247,6 +254,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_sirih)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_sirih)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_sirih)
+                        binding.ivBuah.setImageResource(R.drawable.sirih_2)
                     }
                     if (classes[maxPos] == "Daun Sirsak") {
                         binding.tvDetail.setText(R.string.perubahan_sirsak_detail)
@@ -260,6 +268,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_sirsak)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_sirsak)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_sirsak)
+                        binding.ivBuah.setImageResource(R.drawable.buah_sirsak)
                     }
                     if (classes[maxPos] == "Lidahbuaya") {
                         binding.tvDetail.setText(R.string.perubahan_lidahbuaya_detail)
@@ -273,6 +282,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_lidahbuaya)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_lidahbuaya)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_lidahbuaya)
+                        binding.ivBuah.setImageResource(R.drawable.lidahbuaya_2)
                     }
                     if (classes[maxPos] == "Teh Hijau") {
                         binding.tvDetail.setText(R.string.perubahan_tehhijau_detail)
@@ -286,6 +296,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvKlasifikasiKelas.setText(R.string.klasifikasi_kelas_tehhijau)
                         binding.tvKlasifikasiDivisi.setText(R.string.klasifikasi_divisi_tehhijau)
                         binding.tvCaraPemanfaatan.setText(R.string.cara_pemanfaatan_tehhijau)
+                        binding.ivBuah.setImageResource(R.drawable.tehhijau_2)
                     }
 //                    confidences[i]
 //                } else if (confidences[i] < minConfidence) {

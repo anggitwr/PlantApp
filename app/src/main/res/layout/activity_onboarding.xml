@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/iv_onb_1"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginTop="48dp"
         android:contentDescription="@string/contem_des_1"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="@string/contem_des_1"
-        android:textStyle="normal"
+        android:textStyle="bold"
         android:textColor="@color/black50"
         android:textSize="18sp"
         android:textAlignment="center"
@@ -48,7 +48,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_lewati"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/btn_galery"
             android:fontFamily="@font/poppinsregular"
@@ -60,7 +60,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_onb_1_lanjut"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:layout_marginStart="50dp"
             android:background="@drawable/btn_lanjut"
             android:fontFamily="@font/poppinsregular"
