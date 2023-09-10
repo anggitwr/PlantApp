@@ -7,15 +7,9 @@ import android.graphics.Bitmap
 import android.media.ThumbnailUtils
 import android.os.Bundle
 import android.provider.MediaStore
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.anggitwr.myplantapp.databinding.ActivityMainBinding
-import com.anggitwr.myplantapp.ml.Converted1630Vgg19
-import com.anggitwr.myplantapp.ml.Converted1630Vgg194
-import com.anggitwr.myplantapp.ml.Converted1645Vgg195
 import com.anggitwr.myplantapp.ml.Converted1650Vgg195
-import com.anggitwr.myplantapp.ml.Converted1655Vgg195
-import com.anggitwr.myplantapp.ml.Converted30Vgg19Data4
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
